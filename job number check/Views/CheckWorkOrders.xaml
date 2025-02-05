@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="job_number_check.Views.CheckWorkOrders"
+             Title="CheckWorkOrders">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Check WO's"
+         Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*,*,*,*,*">
+            <Button Text="Select Xml file" Grid.Row="0" Clicked="Button_Clicked" Margin="25,25,25,25" />
+            
+            <Label x:Name="FileName" Grid.Row="1"></Label>
+
+            <Picker Title="Select a worksheet" x:Name="poopo" SelectedIndexChanged="poopo_SelectedIndexChanged" Grid.Row="2" Margin="25,25,25,25" />
+
+            <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" Grid.Row="3"
+                 SelectionMode="Single"  >
+                <CollectionView.Header >
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Label Text="WO#" Grid.Column="0" Margin="5,5,5,25"/>
+                        <Label Text="Count" Grid.Column="1" Margin="5,5,5,25" HorizontalTextAlignment="Center"/>
+                        <Label Text="Value" Grid.Column="2" Margin="5,5,5,25" HorizontalTextAlignment="End"/>
+                    </Grid>
+                </CollectionView.Header>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate >
+                        <Grid ColumnDefinitions="*,*,*"  >
+                            <Label Text="{Binding JobPlan}" Grid.Column="0" Margin="5,5,5,10" HorizontalTextAlignment="Start"/>
+                            <Label Text="{Binding Count}" Grid.Column="1" Margin="5,5,5,10" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Value}" Grid.Column="2" Margin="5,5,5,10" HorizontalTextAlignment="End"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid ColumnDefinitions="*,*" Grid.Row="4" >
+                <Label Text="Total" Grid.Column="0" Margin="25,5,5,25" />
+                <Label Text="{Binding Totil}" Grid.Column="1"  HorizontalTextAlignment="End"  Margin="0,5,25,5" />
+            </Grid>
+
+            <!--<ListView x:Name="poopoo" Grid.Row="2" Margin="20"  ItemSelected="poopoo_ItemSelected"
+                 SelectionMode="Single"  ></ListView>
+            <Label Text="Work orders not in xml" Grid.Row="3"></Label>
+            <ListView x:Name="poo" Margin="20" Grid.Row="4"  ItemSelected="poopoo_ItemSelected"
+     SelectionMode="Single"  ></ListView>-->
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

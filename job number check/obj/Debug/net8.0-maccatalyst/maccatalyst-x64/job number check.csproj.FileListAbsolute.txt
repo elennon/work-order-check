@@ -1,0 +1,40 @@
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\job number check.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\job number check.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\job number check.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\job number check.AssemblyInfo.cs
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\job number check.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\info.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\monkey.png

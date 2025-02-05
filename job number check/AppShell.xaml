@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="job_number_check.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:job_number_check"
+    Shell.FlyoutBehavior="Disabled"
+    Title="job_number_check">
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+    <TabBar>
+        <Tab Title="Home"
+        Icon="monkey.png">
+            <ShellContent Title="Work Orders"
+                     ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Check wo's"
+         Icon="info.png">
+            <ShellContent Title="Van stock take"
+         ContentTemplate="{DataTemplate local:Views.CheckWorkOrders}" />
+
+        </Tab>
+    </TabBar>
+</Shell>

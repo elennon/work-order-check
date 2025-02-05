@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="job_number_check.MainPage">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False" IsVisible="False"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="View jobs"
+             Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Padding="30,80,30,0">
+
+        <Label Text="Work Order number"
+           Margin="10, 30, 10, 30"
+           FontSize="15"
+           FontAttributes="Italic"
+           HorizontalOptions="StartAndExpand" />
+        <Entry Placeholder="WO#" x:Name="won" Text="{Binding WoNumber}"
+               HorizontalOptions="FillAndExpand" HeightRequest="40" 
+               Keyboard="Numeric" />
+        
+
+        <Picker Title="Job Plan" x:Name="poopo" SelectedIndexChanged="poopo_SelectedIndexChanged" Margin="5,25,5,75" />
+
+        <!--<ListView ItemSelected="ListView_ItemSelected" x:Name="jPlans"
+                    SelectionMode="Single"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <Grid ColumnDefinitions="*"  >
+                            <Label Text="{Binding Key}" Grid.Column="0" FontSize="12" FontAttributes="Italic"
+                                  HorizontalOptions="StartAndExpand" />
+                        </Grid>
+                    </ViewCell >
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        
+        <Button Text="Save" TextColor="White" BackgroundColor="#533F95" FontAttributes="Bold"
+            BorderColor="White" BorderWidth="0.5" HorizontalOptions="FillAndExpand" 
+            Clicked="Save_Button_Clicked" />
+
+    </StackLayout>
+</ContentPage>

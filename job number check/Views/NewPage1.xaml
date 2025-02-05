@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanim="clr-namespace:Mopups.Animations;assembly=Mopups"
+             x:Class="job_number_check.Views.NewPage1"
+             Title="MyPopupPage" BackgroundColor="#80000000" CloseWhenBackgroundIsClicked="False">
+    <mopups:PopupPage.Animation>
+        <mopupsanim:ScaleAnimation
+            DurationIn="700"
+            EasingIn="BounceOut"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.7" />
+    </mopups:PopupPage.Animation>
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+        <Border WidthRequest="250" HeightRequest="120"
+                BackgroundColor="White"
+                HorizontalOptions="Center">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="40,0,0,40"/>
+            </Border.StrokeShape>
+            <Button
+                x:Name="LoginButton"
+                Margin="10,5"
+                HorizontalOptions="Fill"
+                VerticalOptions="CenterAndExpand"
+                Text="Saved"
+                Clicked="LoginButton_Clicked">
+            </Button>
+        </Border>
+
+    </ScrollView>
+
+</mopups:PopupPage>
