@@ -2,15 +2,23 @@ C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Releas
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\job number check.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\job number check.pdb
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\AsyncAwaitBestPractices.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\EPPlus.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\EPPlus.Interfaces.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Json.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.Debug.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Options.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Primitives.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Maui.Controls.Compatibility.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Maui.Controls.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Maui.Controls.Xaml.dll
@@ -23,6 +31,8 @@ C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Releas
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\System.Security.Cryptography.Pkcs.dll
+C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\System.Security.Cryptography.Xml.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\ca\Microsoft.Maui.Controls.resources.dll
 C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\cs\Microsoft.Maui.Controls.resources.dll
@@ -275,8 +285,6 @@ C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Releas
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\mauisplash.stamp
-C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\monkey.png
-C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\info.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -289,6 +297,8 @@ C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Releas
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\monkey.png
+C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\info.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
@@ -321,13 +331,3 @@ C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Releas
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\job number check.pdb
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\job number check.genruntimeconfig.cache
 C:\Users\Asus\Documents\c# projects\job number check\job number check\obj\Release\net8.0-ios\iossimulator-x64\ref\job number check.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\EPPlus.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\EPPlus.Interfaces.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\Microsoft.IO.RecyclableMemoryStream.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\System.Security.Cryptography.Pkcs.dll
-C:\Users\Asus\Documents\c# projects\job number check\job number check\bin\Release\net8.0-ios\iossimulator-x64\System.Security.Cryptography.Xml.dll

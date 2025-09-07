@@ -5,6 +5,9 @@ using job_number_check.Models;
 using job_number_check.ViewModels;
 using Microsoft.Maui.Animations;
 using Mopups.Services;
+using System.Diagnostics.Metrics;
+//using static Android.InputMethodServices.Keyboard;
+using System.Collections.Generic;
 //using ClosedXML.Excel;
 
 namespace job_number_check.Views;
@@ -38,7 +41,11 @@ public partial class CheckWorkOrders : ContentPage
         var path = results.First().FullPath;
         workSheets.Clear();
         //var single = GetFirstWs(path);
-        all = await ReadExcell(path);       
+        all = await App.Database.GetExtrasAsync();
+        var wss = await App.Database.GetWorksheetsAsync();
+        workSheets.AddRange(wss.Select(x => x.WorkSheetName).ToList());
+        var ail = await ReadExcell(path);
+        all.AddRange(ail);       
         FileName.Text = Path.GetFileName(path);
         poopo.ItemsSource = workSheets;
         SaveToDBs();
@@ -47,6 +54,7 @@ public partial class CheckWorkOrders : ContentPage
     private async Task<List<WorkItem>> ReadExcell(string path)
     {
         List<WorkItem> workItems = new List<WorkItem>();
+        List<Worksheet> wkSheets = await App.Database.GetWorksheetsAsync();
         double totul = 0;
         ExcelPackage.License.SetNonCommercialPersonal("Eddie Lennon");
         byte[] bin = File.ReadAllBytes(path);
@@ -54,51 +62,34 @@ public partial class CheckWorkOrders : ContentPage
             try
             {
                 using (ExcelPackage excelPackage = new ExcelPackage(stream))
-                {
-                    //ExcelWorksheet worksheet = workbook.Worksheets.FirstOrDefault();
-                    foreach (var worksheet in excelPackage.Workbook.Worksheets)
+                {                   
+                    for (int ws = 0; ws <= excelPackage.Workbook.Worksheets.Count(); ws++)
                     {
                         int cnt = 0;
                         int cont = 0;
-                        //ExcelWorksheet worksheet = workbook.Worksheets[0];
-
-                        // Display sheet's name.
-                        Console.WriteLine("{1} {0} {1}\n", worksheet.Name, new string('#', 30));
-                        workSheets.Add(worksheet.Name);
-                        int ruw = 0;
-
-
-                        ExcelCellAddress start = worksheet.Dimension.Start;
-                        ExcelCellAddress end = worksheet.Dimension.End;
-                        for (int row = 1; row <= end.Row; row++)
-                        {
-                            var rw = worksheet.Cells[string.Format("{0}:{0}", row)];
-                            // just an example, you want to know if all cells of this row are empty
-                            //bool allEmpty = rw.FirstOrDefault(c => string.IsNullOrWhiteSpace(c.Text));
-                            var g = worksheet.Cells[row, start.Column];
-                            if (g.Text.ToString() == "")
-                            {
-                                cont++; continue; // skip this row
-                            }
-                            if (g.Text.ToString() == "ACTUAL FINISH DATE")
-                            {
-                                break;
-                            }
-                        }
-                        cont = cont + 2;
                         DateTime previusDt = new DateTime();
-                        for (int row = cont; row <= end.Row; row++)
+                        var worksheet = excelPackage.Workbook.Worksheets[ws];
+                        
+                        if (wkSheets.Select(x => x.WorkSheetName).ToList().Contains(worksheet.Name) == false)
                         {
+                            await App.Database.SaveWorksheetAsync(new Worksheet(worksheet.Name));
+                        }
+                        else { break; }
+                        workSheets.Add(worksheet.Name);
+                        for (int row = 10; row <= worksheet.Rows.Count(); row++)
+                        {
+                            var hen = worksheet.Rows.Count();
                             cnt++;
                             var HU = worksheet.Cells[row, 4].Text;
-                            if (worksheet.Cells[row, start.Column].Text == "" && worksheet.Cells[row, 2].Text == "" && worksheet.Cells[row, 4].Text == "")
+                            if (worksheet.Cells[row, 1].Text == "" && worksheet.Cells[row, 2].Text == "" && worksheet.Cells[row, 4].Text == "")
                             {
-                                break;
+                                cont++;
+                                continue; //break;
                             }
                             WorkItem wi = new WorkItem();
                             wi.WorkSheet = worksheet.Name;
 
-                            for (int col = start.Column; col <= end.Column; col++)
+                            for (int col = 1; col <= 6; col++)
                             { // ... Cell by cell...
                                 var cell = worksheet.Cells[row, col]; // This got me the actual value I needed.
                                 string columnName = new string(worksheet.Cells[row, col].Address.TakeWhile(char.IsLetter).ToArray());
@@ -136,7 +127,7 @@ public partial class CheckWorkOrders : ContentPage
                                         {
                                             wi.JobPlan = cell.Text.ToString();
                                         }
-                                        else if(worksheet.Cells[row, col - 1].Text != "")
+                                        else if (worksheet.Cells[row, col - 1].Text != "")
                                         {
                                             wi.JobPlan = worksheet.Cells[row, col - 1].Text;
                                         }
@@ -149,7 +140,7 @@ public partial class CheckWorkOrders : ContentPage
                                     case "F":
                                         if (double.TryParse(cell.Text.ToString(), out double result))
                                         {
-                                            wi.Value = result;
+                                            wi.Value = Math.Round(result, 2) ;
                                         }
                                         break;
                                 }
@@ -157,10 +148,10 @@ public partial class CheckWorkOrders : ContentPage
                             wi.IsGMC = true;
                             workItems.Add(wi);
                             totul += wi.Value;
-                            var gg = cont;
-                            Console.WriteLine();
                         }
                     }
+                        
+                    
                     //SortWorkOrders(workItems);
                 }
             }
@@ -230,9 +221,9 @@ public partial class CheckWorkOrders : ContentPage
                 //Sorting the Students in Each Group based on Name in Ascending order
                 JobPlan = std.Key.ToString(),
                 Count = std.Count(),
-                Value = std.Sum(x => x.Value)
+                Value = Math.Round(std.Sum(x => x.Value), 2) 
             });
-            ViewModel.Totil = gg.Sum(v => v.Value).ToString();
+            ViewModel.Totil = Math.Round(gg.Sum(v => v.Value), 2).ToString();
             ViewModel.Totalss = new System.Collections.ObjectModel.ObservableCollection<Totals>();
             foreach (var g in gg)
             {

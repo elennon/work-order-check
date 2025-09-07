@@ -16,8 +16,10 @@ namespace job_number_check.Models
             database = new SQLiteAsyncConnection(dbPath);
 
             //database.DropTableAsync<WorkItem>().Wait();
-            
+            //database.DropTableAsync<Worksheet>().Wait();
+
             database.CreateTableAsync<WorkItem>().Wait();
+            database.CreateTableAsync<Worksheet>().Wait();
         }
         //public Task<List<WorkItem>> GetExtrasAsync(string prjId)
         //{
@@ -57,6 +59,26 @@ namespace job_number_check.Models
         {
             // Delete a note.
             return database.DeleteAsync(note);
+        }
+
+        public Task<List<Worksheet>> GetWorksheetsAsync()
+        {
+            //Get all Quote.
+            return database.Table<Worksheet>().ToListAsync();
+        }
+        public async Task<int> SaveWorksheetAsync(Worksheet note)
+        {
+            if (note.ID != 0)
+            {
+                // Update an existing note.
+                await database.UpdateAsync(note);
+            }
+            else
+            {
+                // Save a new note.
+                await database.InsertAsync(note);
+            }
+            return note.ID;
         }
     }
 }

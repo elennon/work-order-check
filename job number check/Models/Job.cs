@@ -29,7 +29,15 @@ namespace job_number_check.Models
         }
         public string WoNumber { get; set; }
         public string JobPlan { get; set; }
+
         public double Value { get; set; }
+
+        //private double value;       
+        //public double Value   // property
+        //{
+        //    get { return Math.Round(this.Value, 2); }   // get method
+        //    set { value = Math.Round(this.Value, 2); }  // set method
+        //}
         public string WorkSheet { get; set; }
         public string Location { get; set; }
 
@@ -54,4 +62,17 @@ namespace job_number_check.Models
         public List<WorkItem> WorkOrders { get; set; }
 
     } 
+
+    public class Worksheet
+    {
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
+        public Worksheet() { }
+        public Worksheet(string worksheet)
+        {
+            this.WorkSheetName = worksheet;
+        }
+        public string MyId { get; set; }
+        public string WorkSheetName { get; set; }
+    }
 }
