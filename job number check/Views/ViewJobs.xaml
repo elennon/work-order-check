@@ -16,7 +16,12 @@
                 MaximumDate="12/31/2025" 
                 Grid.Column="1" />
         </Grid>
-        <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" 
+        <Grid ColumnDefinitions="*,*">
+            <Label Text="GMC jobs" Grid.Column="0" Margin="25,5,5,25" />
+            <CheckBox x:Name="GMCJobsCheck" CheckedChanged="GMCJobsCheck_CheckedChanged"
+                Grid.Column="1" />
+        </Grid>
+        <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" VerticalOptions="FillAndExpand" HeightRequest="300"
                         SelectionChanged="poopoo_SelectionChanged" SelectionMode="Single"  >
             <CollectionView.Header >
                 <Grid ColumnDefinitions="*,*,*">

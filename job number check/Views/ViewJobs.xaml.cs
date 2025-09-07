@@ -50,7 +50,7 @@ public partial class ViewJobs : ContentPage
             ViewModel.FDT = ViewModel.TDT.AddDays(-5);
         }
         all = await App.Database.GetExtrasAsync();
-
+        all = all.Where(x => x.IsGMC == true).ToList();
         ViewModel.Jobs = new System.Collections.ObjectModel.ObservableCollection<WorkItem>(all.Where(a => a.Date >= ViewModel.FDT && a.Date <= ViewModel.TDT));
         var gg = ViewModel.Jobs.GroupBy(x => x.JobPlan).Select(std => new Totals()
         {
@@ -68,7 +68,7 @@ public partial class ViewJobs : ContentPage
         }
         fdp.Date = ViewModel.FDT;
         tdp.Date = ViewModel.TDT;
-
+        GMCJobsCheck.IsChecked = true;
     }
 
     private void tdp_DateSelected(object sender, DateChangedEventArgs e)
@@ -123,5 +123,30 @@ public partial class ViewJobs : ContentPage
         {
             await Shell.Current.GoToAsync("viewWorkOrders", parms);
         });
+    }
+
+    private async void GMCJobsCheck_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        bool isChecked = GMCJobsCheck.IsChecked;
+        
+        all = await App.Database.GetExtrasAsync();
+        all = all.Where(x => x.IsGMC == isChecked).ToList();
+        ViewModel.Jobs = new System.Collections.ObjectModel.ObservableCollection<WorkItem>(all.Where(a => a.Date >= ViewModel.FDT && a.Date <= ViewModel.TDT));
+        var gg = ViewModel.Jobs.GroupBy(x => x.JobPlan).Select(std => new Totals()
+        {
+            Key = std.Key,
+            //Sorting the Students in Each Group based on Name in Ascending order
+            JobPlan = std.Key.ToString(),
+            Count = std.Count(),
+            Value = std.Sum(x => x.Value)
+        });
+        ViewModel.Totil = gg.Sum(v => v.Value).ToString();
+        ViewModel.Totalss = new System.Collections.ObjectModel.ObservableCollection<Totals>();
+        foreach (var g in gg)
+        {
+            ViewModel.Totalss.Add(g);
+        }
+        fdp.Date = ViewModel.FDT;
+        tdp.Date = ViewModel.TDT;
     }
 }

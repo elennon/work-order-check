@@ -2,21 +2,24 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="job_number_check.Views.CheckWorkOrders"
-             Title="CheckWorkOrders">
+             Title="View Statments">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Check WO's"
          Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
-    <VerticalStackLayout>
-        <Grid RowDefinitions="*,*,*,*,*">
-            <Button Text="Select Xml file" Grid.Row="0" Clicked="Button_Clicked" Margin="25,25,25,25" />
+    <VerticalStackLayout >
+        <Grid RowDefinitions="*,*,*,*,*,*">
+            <Button Text="Select Excel file" Grid.Row="0" Clicked="Button_Clicked" Margin="25,25,25,25" />
+            <Label x:Name="FileName" Grid.Row="1" Margin="25,5,5,5"></Label>
+            <!--<Label Grid.Row="2" Margin="5,5,5,25" Text="Save to db"></Label>
+            <CheckBox x:Name="savDb" Margin="5,5,5,25" Grid.Row="2"></CheckBox>-->
+            <Grid Grid.Row="3" Margin="25,5,25,5" ColumnDefinitions="*,*" >
+                <Picker Title="Select a worksheet" x:Name="poopo" Grid.Column="0" SelectedIndexChanged="poopo_SelectedIndexChanged" />
+            </Grid>
             
-            <Label x:Name="FileName" Grid.Row="1"></Label>
 
-            <Picker Title="Select a worksheet" x:Name="poopo" SelectedIndexChanged="poopo_SelectedIndexChanged" Grid.Row="2" Margin="25,25,25,25" />
-
-            <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" Grid.Row="3"
-                 SelectionMode="Single"  >
+            <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" Grid.Row="4" VerticalScrollBarVisibility="Always"
+                 SelectionMode="Single" VerticalOptions="FillAndExpand" HeightRequest="300" >
                 <CollectionView.Header >
                     <Grid ColumnDefinitions="*,*,*">
                         <Label Text="WO#" Grid.Column="0" Margin="5,5,5,25"/>
@@ -34,7 +37,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <Grid ColumnDefinitions="*,*" Grid.Row="4" >
+            <Grid ColumnDefinitions="*,*" Grid.Row="5" >
                 <Label Text="Total" Grid.Column="0" Margin="25,5,5,25" />
                 <Label Text="{Binding Totil}" Grid.Column="1"  HorizontalTextAlignment="End"  Margin="0,5,25,5" />
             </Grid>

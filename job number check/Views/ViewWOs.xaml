@@ -11,7 +11,7 @@
                 FontAttributes="Italic"
                 HorizontalOptions="StartAndExpand" />  
   
-        <ListView x:Name="poopoo" Margin="20" ItemsSource="{Binding Wos}"
+        <ListView x:Name="poopoo" Margin="20" ItemsSource="{Binding Wos}" MinimumHeightRequest="600" HeightRequest="600"
                  SelectionMode="Single"  >
             <ListView.Header >
                 <Grid ColumnDefinitions="*,*">
@@ -20,8 +20,8 @@
                 </Grid>
             </ListView.Header>
             
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="models:WorkItem">
+            <ListView.ItemTemplate >
+                <DataTemplate x:DataType="models:WorkItem" >
                     <ViewCell >
                     <Grid ColumnDefinitions="*,*" Margin="5" >
                         <Label Text="{Binding WoNumber}" Grid.Column="0" Margin="0,5,5,5"/>

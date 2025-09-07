@@ -11,7 +11,7 @@
             FontAttributes="Italic"
             HorizontalOptions="StartAndExpand" />
 
-        <ListView x:Name="poopoo" Margin="20" ItemsSource="{Binding StockTake}"
+        <ListView x:Name="poopoo" Margin="20" ItemsSource="{Binding StockTake}" HeightRequest="600"
              SelectionMode="Single"  >
             <ListView.Header >
                 <Grid ColumnDefinitions="*,*">
