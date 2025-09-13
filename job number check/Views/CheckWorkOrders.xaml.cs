@@ -204,6 +204,7 @@ public partial class CheckWorkOrders : ContentPage
         {
             qq = picker.Items[selectedIndex];
             var hh = all.Where(x => x.WorkSheet == qq);
+            ViewModel.Totalss = new System.Collections.ObjectModel.ObservableCollection<Totals>();
             //var gh = qq.Trim().Split('&');
             //var n = gh.FirstOrDefault().Split('.');
             //var k = n.FirstOrDefault() + "/" + n.LastOrDefault() + "/" + DateTime.Now.Year.ToString();
@@ -215,21 +216,26 @@ public partial class CheckWorkOrders : ContentPage
             //To = DateTime.Parse(k);
             //From = w.AddDays(-4);       
             ViewModel.Jobs = new System.Collections.ObjectModel.ObservableCollection<WorkItem>(hh);
-            var gg = ViewModel.Jobs.GroupBy(x => x.JobPlan).Select(std => new Totals()
+            
+            var crows = hh.Where(x => x.WoNumber != "" && x.JobPlan != "PRER").ToList();
+            var t1 = new Totals("Site works", crows.Sum(t => t.Value));
+            ViewModel.Totalss.Add(t1);
+            crows = hh.Where(x => x.JobPlan == "PRER").ToList();
+            t1 = new Totals("PRER", crows.Sum(t => t.Value));
+            ViewModel.Totalss.Add(t1);
+            crows = hh.Where(x => x.WoNumber == "").ToList();
+            var gg = crows.GroupBy(x => x.JobPlan).Select(std => new Totals()
             {
-                Key = std.Key,
-                //Sorting the Students in Each Group based on Name in Ascending order
-                JobPlan = std.Key.ToString(),
-                Count = std.Count(),
-                Value = Math.Round(std.Sum(x => x.Value), 2) 
+                Key = std.Key,                
+                JobPlan = std.Key.ToString(),                
+                Value = Math.Round(std.Sum(x => x.Value), 2)
             });
-            ViewModel.Totil = Math.Round(gg.Sum(v => v.Value), 2).ToString();
-            ViewModel.Totalss = new System.Collections.ObjectModel.ObservableCollection<Totals>();
             foreach (var g in gg)
             {
                 ViewModel.Totalss.Add(g);
             }
-            var ghghhg = ViewModel.Totalss;
+            ViewModel.Totil = Math.Round(ViewModel.Totalss.Sum(v => v.Value), 2).ToString();
+            ViewModel.SubTotil = Math.Round(ViewModel.Totalss.Sum(v => v.Value), 2).ToString();
         }       
     }
 

@@ -21,17 +21,27 @@
             <CollectionView x:Name="poopoo" Margin="20" ItemsSource="{Binding Totalss}" Grid.Row="4" VerticalScrollBarVisibility="Always"
                  SelectionMode="Single" VerticalOptions="FillAndExpand" HeightRequest="300" >
                 <CollectionView.Header >
-                    <Grid ColumnDefinitions="*,*,*">
-                        <Label Text="WO#" Grid.Column="0" Margin="5,5,5,25"/>
-                        <Label Text="Count" Grid.Column="1" Margin="5,5,5,25" HorizontalTextAlignment="Center"/>
-                        <Label Text="Value" Grid.Column="2" Margin="5,5,5,25" HorizontalTextAlignment="End"/>
+                    <Grid ColumnDefinitions="*,*" >
+                        <StackLayout Grid.Column="0" Margin="5,5,5,25">
+                            <Label Text="Description" />
+                            <BoxView HeightRequest="1"
+                                 BackgroundColor="Black"
+                                 HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                        <!--<Label Text="Count" Grid.Column="1" Margin="5,5,5,25" HorizontalTextAlignment="Center"/>-->
+                        <StackLayout Grid.Column="1" Margin="5,5,5,25" >
+                            <Label Text="Value" HorizontalTextAlignment="End" />
+                            <BoxView HeightRequest="1"
+                                 BackgroundColor="Black"
+                                 HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
                     </Grid>
                 </CollectionView.Header>
                 <CollectionView.ItemTemplate>
                     <DataTemplate >
                         <Grid ColumnDefinitions="*,*,*"  >
                             <Label Text="{Binding JobPlan}" Grid.Column="0" Margin="5,5,5,10" HorizontalTextAlignment="Start"/>
-                            <Label Text="{Binding Count}" Grid.Column="1" Margin="5,5,5,10" HorizontalTextAlignment="Center"/>
+                            <!--<Label Text="{Binding Count}" Grid.Column="1" Margin="5,5,5,10" HorizontalTextAlignment="Center"/>-->
                             <Label Text="{Binding Value}" Grid.Column="2" Margin="5,5,5,10" HorizontalTextAlignment="End"/>
                         </Grid>
                     </DataTemplate>

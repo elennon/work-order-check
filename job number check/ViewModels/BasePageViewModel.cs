@@ -55,6 +55,36 @@ namespace job_number_check.ViewModels
             }
         }
 
+        private string subTotil;
+
+        public string SubTotil
+        {
+            get
+            {
+                return subTotil;
+            }
+            set
+            {
+                subTotil = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        private string siteWorksValue;
+
+        public string SiteWorksValue
+        {
+            get
+            {
+                return siteWorksValue;
+            }
+            set
+            {
+                siteWorksValue = value;
+                NotifyPropertyChanged();
+            }
+        }
+
         private DateTime fdt;
 
         public DateTime FDT

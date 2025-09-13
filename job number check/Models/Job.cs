@@ -55,6 +55,11 @@ namespace job_number_check.Models
     public class Totals
     { 
         public Totals() { }
+        public Totals(string description, double value )
+        {
+            this.JobPlan = description;
+            this.Value = value;
+        }
         public string Key { get; set; }
         public int Count { get; set; }
         public string JobPlan { get; set; }
