@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("job number check")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+66acce5668be479317e14749bf1e7758ddf79769")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f416b8464c3196e95d53c86e4faa26567e577bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("job number check")]
 [assembly: System.Reflection.AssemblyTitleAttribute("job number check")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
